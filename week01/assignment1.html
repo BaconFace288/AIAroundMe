@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 1: AI Around Me - MCCTC 145130</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1, h2, h3 {
+      color: #111827;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+    }
+    .header-box {
+      background: #f3f4f6;
+      border-left: 4px solid #2563eb;
+      padding: 12px 18px;
+      margin-bottom: 25px;
+      border-radius: 4px;
+    }
+    .test-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: 16px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .test-box strong {
+      color: #1e40af;
+      font-size: 1.1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.95em;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f9fafb;
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background-color: #fcfcfc;
+    }
+    .badge-ai {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .badge-not-ai {
+      display: inline-block;
+      background: #f3f4f6;
+      color: #4b5563;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    blockquote {
+      margin: 16px 0;
+      padding: 12px 18px;
+      background: #f9fafb;
+      border-left: 4px solid #9ca3af;
+      font-style: italic;
+    }
+    .screenshot-placeholder {
+      border: 2px dashed #9ca3af;
+      background: #f9fafb;
+      padding: 30px;
+      text-align: center;
+      color: #6b7280;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+    code {
+      background: #f3f4f6;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: Consolas, monospace;
+    }
+    pre {
+      background: #1f2937;
+      color: #f9fafb;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">
+    <div style="font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; color: #4b5563;">MCCTC | 145130 Applications of AI</div>
+    <h2 style="margin: 4px 0 8px 0; border: none;">Assignment 1: AI Around Me</h2>
+    <div><strong>Points:</strong> 20 points &nbsp;|&nbsp; <strong>Due:</strong> Monday &nbsp;|&nbsp; <strong>Policy:</strong> No AI tools for this assignment</div>
+    <div style="margin-top: 8px;">
+      <strong>Name:</strong> ______________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <strong>Date:</strong> November 18, 2026
+    </div>
+  </div>
+
+  <div class="test-box">
+    <strong>The One Test:</strong><br>
+    <em>"Did a person write the rules, or did the computer learn them from examples?"</em>
+    <ul>
+      <li><strong>If a person wrote every rule:</strong> it is <u>not AI</u>. (A calculator follows rules a person wrote.)</li>
+      <li><strong>If it learned from examples:</strong> it <u>is AI</u>. (Face unlock learned from photos of faces.)</li>
+    </ul>
+  </div>
+
+  <h3>Step 1: Warm up with three examples (3 points)</h3>
+  <p><em>Decide AI or Not AI for each. Write one sentence saying why, using the test.</em></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 25%;">Thing</th>
+        <th style="width: 15%;">AI or Not AI?</th>
+        <th>Why</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>A calculator app</strong></td>
+        <td><span class="badge-not-ai">Not AI</span></td>
+        <td>A human programmer wrote exact mathematical rules and instructions for every operation, so it follows written rules rather than learning from examples.</td>
+      </tr>
+      <tr>
+        <td><strong>Face unlock on a phone</strong></td>
+        <td><span class="badge-ai">AI</span></td>
+        <td>It learned to identify facial features and recognize my face by training on thousands of face photo examples, rather than following rigid handwritten rules.</td>
+      </tr>
+      <tr>
+        <td><strong>A timer that beeps after 5 minutes</strong></td>
+        <td><span class="badge-not-ai">Not AI</span></td>
+        <td>A person wrote the rule telling the computer to count down the seconds and sound a chime when the counter reaches zero, so it follows human-written instructions.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Step 2: Find the AI on your phone (8 points)</h3>
+  <p><em>List 8 apps or features you actually use. Include at least two you think are not AI.</em></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 4%;">#</th>
+        <th style="width: 28%;">App or feature</th>
+        <th style="width: 14%;">AI or Not AI?</th>
+        <th>If AI: what did it learn from? If not AI: what rule does it follow?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><strong>TikTok / YouTube Recommendations</strong></td>
+        <td><span class="badge-ai">AI</span></td>
+        <td>It learned from what millions of people watch, skip, like, and replay, along with my personal watch history and dwell time.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><strong>Smartphone Camera Portrait Mode</strong></td>
+        <td><span class="badge-ai">AI</span></td>
+        <td>It learned from millions of labeled photos of people and backgrounds to predict where subject edges and depth boundaries are to blur the background.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><strong>Keyboard Predictive Text / Autocorrect</strong></td>
+        <td><span class="badge-ai">AI</span></td>
+        <td>It learned from huge datasets of typed text, sentences, common typo patterns, and my frequent phrases to predict the next word.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><strong>Spotify Discover Weekly / Smart Shuffle</strong></td>
+        <td><span class="badge-ai">AI</span></td>
+        <td>It learned from millions of playlists, listening sequences, skips, and user saves, combined with my own listening habits.</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><strong>Voice Assistant (Siri / Google Assistant)</strong></td>
+        <td><span class="badge-ai">AI</span></td>
+        <td>It learned from thousands of hours of speech recordings from diverse voices and accents to transcribe audio into text commands.</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><strong>Email Spam Filter (Gmail)</strong></td>
+        <td><span class="badge-ai">AI</span></td>
+        <td>It learned from millions of emails that users previously marked as spam or not spam to detect patterns in unwanted messages.</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><strong>Phone Alarm / Clock App</strong></td>
+        <td><span class="badge-not-ai">Not AI</span></td>
+        <td>It follows a human-written rule: compare current device time to the alarm time; if they match, play the alarm audio.</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><strong>Built-in Notes App / Checklist</strong></td>
+        <td><span class="badge-not-ai">Not AI</span></td>
+        <td>It follows human-written rules: when a key is pressed, append the character to storage; when a checkbox is tapped, toggle its checkmark state.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Step 3: Explain one in depth (5 points)</h3>
+  <p><em>Pick one app from your list that is AI. Answer in full sentences.</em></p>
+  <p><strong>Chosen App:</strong> TikTok / YouTube Recommendations Feed</p>
+  <ol>
+    <li>
+      <strong>What does it predict or decide for you?</strong><br>
+      It predicts which video is most likely to capture my attention and keep me watching, and it decides the exact sequence of videos to show next on my feed as I scroll.
+    </li>
+    <li style="margin-top: 10px;">
+      <strong>What examples do you think it learned from?</strong><br>
+      It learned from billions of user interaction logs across the platform, including completion rates, re-watches, likes, shares, comments, and how quickly users swiped away from certain videos. It also learns directly from my personal viewing patterns and time spent watching different topics.
+    </li>
+    <li style="margin-top: 10px;">
+      <strong>What happens when it gets something wrong? Give a real example if you have one.</strong><br>
+      When the algorithm gets something wrong, it misinterprets passive viewing or accidental pauses as strong interest. For example, if I put my phone down while a video about wood carving is playing to go grab water, the algorithm registers a very long watch time and mistakenly assumes I love woodworking. For the next several days, my feed gets flooded with wood-carving videos until I actively swipe them away quickly or tap "Not Interested" to teach the model better.
+    </li>
+  </ol>
+
+  <h3>Step 4: In your own words (4 points)</h3>
+  <p><em>Finish this sentence in your own words, without looking back at the slides:</em></p>
+  <blockquote>
+    <strong>The difference between a regular program and AI is</strong> that a regular program executes explicit step-by-step rules written by a human programmer, whereas an AI program discovers its own patterns and decision-making rules by learning from examples.
+  </blockquote>
+
+  <h3>Stretch question (not graded)</h3>
+  <p><em>A video game enemy chases you when you get close and runs away when its health is low. Is it AI? Use the test, and explain why people still call it "game AI."</em></p>
+  <blockquote>
+    Applying the test (<em>"Did a person write the rules, or did the computer learn them from examples?"</em>), this video game enemy is <strong>not true AI</strong>. A programmer wrote exact conditional rules into the game's code (such as <code>if player_distance &lt; 10: chase()</code> and <code>if health &lt; 20%: flee()</code>). The enemy never learned these behaviors from playing matches or studying combat examples.<br><br>
+    People still call it "game AI" because within game development, the term has historically referred to any scripted system, state machine, or decision tree that makes non-player characters (NPCs) behave in a way that feels intelligent and responsive to the player, even though it is entirely rule-based.
+  </blockquote>
+
+  <hr>
+
+  <h3>What you turn in</h3>
+
+  <h4>1. Screenshots or photos</h4>
+  <p><em>Photo or screenshot 1: your finished Step 2 table of eight apps. Press Windows + Shift + S to take a screenshot or see the generated image below.</em></p>
+  <div style="margin: 15px 0; text-align: center;">
+    <img src="./step2_table_screenshot.png" alt="Step 2 Table Screenshot" style="max-width: 100%; border: 1px solid #d1d5db; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  </div>
+
+  <h4>2. Review questions</h4>
+  <ol>
+    <li>
+      <strong>What is the one test for deciding whether something is AI?</strong><br>
+      The one test is: <em>"Did a person write the rules, or did the computer learn them from examples?"</em>
+    </li>
+    <li style="margin-top: 10px;">
+      <strong>Which app on your list surprised you most, and why?</strong><br>
+      Smartphone Camera Portrait Mode surprised me the most. Before learning the test, I assumed portrait blur was handled purely by physical camera hardware or simple contrast checks. Learning that it requires a machine learning model trained on millions of photos to distinguish tricky borders like frizzy hair, eyeglasses, and transparent edges showed me that AI is operating behind everyday camera features.
+    </li>
+  </ol>
+
+  <h4>3. Your commit</h4>
+  <p>Save this assignment in your repository in a folder named <code>week01</code>, commit with <code>git commit -m "Week 1 Assignment 1: AI Around Me"</code>, push to GitHub, and ensure your repo is shared with <strong><code>mjsekol</code></strong>.</p>
+  <p><strong>My commit link:</strong> <a href="https://github.com/BaconFace288/AIAroundMe/commit/d4a92aa121ec26f5064e14ccf3fb658b103eb646" target="_blank">https://github.com/BaconFace288/AIAroundMe/commit/d4a92aa121ec26f5064e14ccf3fb658b103eb646</a></p>
+
+</body>
+</html>
